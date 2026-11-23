@@ -33,6 +33,7 @@
 
 .work-item-meta {
   display: flex;
+  line-height: 0.75;
 }
 
 .work-item-meta-spacer {

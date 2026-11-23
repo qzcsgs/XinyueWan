@@ -21,6 +21,18 @@
   margin-right: 25px;
 }
 
+.work-order {
+  width: 26px;
+}
+
+.work-name {
+  width: 153px;
+}
+
+.work-type {
+  width: 113px;
+}
+
 .work-cover-list {
   width: 950px;
   position: relative;

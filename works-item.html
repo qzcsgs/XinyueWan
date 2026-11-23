@@ -166,7 +166,7 @@ Adhesive binding
 			},
 			{
 				id: "fuhao",
-				name: "、《》 ·",
+				name: "、《》·",
 				type: "Poster",
 				year: "2025",
 				cover: "assets/images/fuhao/4-1.jpg",
@@ -297,7 +297,10 @@ Paper Fragments
 		const workItem = workItemDataList.find((item) => item.id == id) || workItemDataList[0];
 
 		let winDom = document.querySelector(".work-item-name");
-		winDom.textContent = workItem.name;
+		let nameArr = workItem.name.split("");
+		winDom.innerHTML = nameArr.map((char) => {
+			return `<span ${char === "·" ? "style='display: inline-block;'" : ""}>${char}</span>`;
+		}).join("");
 		if (id == "fuhao") {
 			winDom.style.lineHeight = "1";
 			winDom.style.fontFamily = "PingFang SC";
