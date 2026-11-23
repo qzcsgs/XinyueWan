@@ -3,8 +3,7 @@
 }
 
 .work-item-info {
-  height: 100vh;
-  padding-bottom: 25px;
+  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
 }
@@ -60,6 +59,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  margin-top: 25px;
 }
 
 .work-item-image-row {
@@ -79,6 +79,14 @@
   height: auto;
 }
 
+/* Vimeo 播放器：占满宽度，按 16:9 比例自适应高度 */
+.work-item-image-row.single>iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
 /* 多张图片：flex-grow 由脚本设为宽高比，实现等高、按比例铺满整行且无间隙 */
 .work-item-image-row.multi>img {
   flex-basis: 0;
@@ -91,13 +99,13 @@
 #sound {
   display: inline-block;
   transition: transform 0.3s ease;
+  text-decoration: underline;
 }
 
 #sound:hover {
   color: rgb(179, 179, 179);
   cursor: pointer;
   transform: rotate(-10deg);
-  text-decoration: underline;
 }
 
 .work-item-image-row video {
