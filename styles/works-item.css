@@ -28,6 +28,7 @@
 
 .work-item-cover {
   width: 950px;
+  max-width: 50%;
 }
 
 .work-item-meta {
@@ -82,6 +83,7 @@
 /* Vimeo 播放器：占满宽度，按 16:9 比例自适应高度 */
 .work-item-image-row.single>iframe {
   width: 100%;
+  height: calc(100vh - 50px);
   aspect-ratio: 16 / 9;
   border: 0;
   display: block;
