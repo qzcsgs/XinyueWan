@@ -1,0 +1,101 @@
+.work-page {
+  display: flex;
+  height: 100vh;
+  padding: 25px;
+}
+
+.name-works {
+  font-size: 80px;
+}
+
+.work-list {
+  margin-top: 25px;
+}
+
+.work-item {
+  display: flex;
+}
+
+.work-item:hover {
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+
+.work-item div {
+  margin-right: 25px;
+}
+
+.work-cover-list {
+  width: 950px;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.work-cover-list img {
+  position: absolute;
+  width: 50%;
+  height: calc(100% / 3);
+  object-fit: cover;
+  z-index: 1;
+  transition:
+    top 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    left 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    width 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    height 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.25s ease;
+}
+
+.work-cover-list img:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.work-cover-list img:nth-child(2) {
+  top: 0;
+  left: 50%;
+}
+
+.work-cover-list img:nth-child(3) {
+  top: calc(100% / 3);
+  left: 0;
+}
+
+.work-cover-list img:nth-child(4) {
+  top: calc(100% / 3);
+  left: 50%;
+}
+
+.work-cover-list img:nth-child(5) {
+  top: calc(100% * 2 / 3);
+  left: 0;
+}
+
+.work-cover-list img:nth-child(6) {
+  top: calc(100% * 2 / 3);
+  left: 50%;
+}
+
+/* 悬浮作品时，其余图片淡出 */
+.work-page:has(.work-item:hover) .work-cover-list img {
+  opacity: 0;
+}
+
+/* 对应的图片放大铺满整个列表 */
+.work-page:has(.work-item[data-work="stone-museum"]:hover) .work-cover-list img[data-work="stone-museum"],
+.work-page:has(.work-item[data-work="writing-machines"]:hover) .work-cover-list img[data-work="writing-machines"],
+.work-page:has(.work-item[data-work="notes"]:hover) .work-cover-list img[data-work="notes"],
+.work-page:has(.work-item[data-work="fuhao"]:hover) .work-cover-list img[data-work="fuhao"],
+.work-page:has(.work-item[data-work="pane2k"]:hover) .work-cover-list img[data-work="pane2k"],
+.work-page:has(.work-item[data-work="written-remains"]:hover) .work-cover-list img[data-work="written-remains"] {
+  /* top: 50%; */
+  top: 0px;
+  left: 0;
+  width: 950px;
+  height: auto;
+  object-fit: contain;
+  /* transform: translateY(-50%); */
+  opacity: 1;
+  z-index: 2;
+}

@@ -1,0 +1,14 @@
+header .info-desc {
+  font-family: "SF Pro";
+  font-size: 21px;
+  line-height: 25.2px;
+  color: rgb(26, 26, 26);
+}
+
+.info-desc-contact {
+  width: 15%;
+}
+
+.info-desc-about {
+  flex: 1;
+}

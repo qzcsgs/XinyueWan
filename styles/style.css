@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Gebuk";
+  src: url("../assets/fonts/gebuk-regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PingFang SC";
+  src: url("../assets/fonts/PingFang/PingFangSC-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../assets/fonts/SfproRegular.OTF") format("opentype");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgb(26, 26, 26);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+
+body {
+  font-family: "SF Pro", "PingFang SC", sans-serif;
+  font-size: 21px;
+  line-height: 25.2px;
+  color: rgb(26, 26, 26);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  font-family: "Gebuk";
+}
+
+.name {
+  font-size: 110px;
+  line-height: 0.7;
+  width: 44%;
+  font-family: "Gebuk";
+}

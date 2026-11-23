@@ -1,0 +1,60 @@
+header .menu {
+  font-size: 48px;
+  line-height: normal;
+  line-height: 0.8;
+}
+
+header .menu:hover {
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+
+.header-spacer {
+  width: 15%;
+}
+
+.menu-works {
+  width: 22%;
+}
+
+.image-list {
+  display: flex;
+}
+
+.image-item {
+  font-size: 0;
+}
+
+.image-item img {
+  width: 100%;
+  display: block;
+}
+
+.image-2-top {
+  width: 64.5% !important;
+  margin-bottom: 25px;
+}
+
+.image-1 {
+  width: 22%;
+  padding-right: 25px;
+}
+
+.image-2 {
+  width: 22%;
+  padding-right: 25px;
+}
+
+.image-3 {
+  width: 15%;
+  padding-right: 25px;
+}
+
+.image-4 {
+  width: 22%;
+  padding-right: 25px;
+}
+
+.image-5 {
+  flex: 1;
+}

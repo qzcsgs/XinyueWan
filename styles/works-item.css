@@ -1,0 +1,105 @@
+.work-item-page {
+  padding: 25px;
+}
+
+.work-item-info {
+  height: 100vh;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-item-top {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.work-item-main {
+  flex: 1;
+}
+
+.work-item-desc-row {
+  display: flex;
+}
+
+.work-item-desc-left {
+  margin-right: 100px;
+}
+
+.work-item-cover {
+  width: 950px;
+}
+
+.work-item-meta {
+  display: flex;
+}
+
+.work-item-meta-spacer {
+  width: 50%;
+}
+
+.work-item-type {
+  flex: 1;
+}
+
+.work-item-name {
+  font-family: "Gebuk";
+  font-size: 95px;
+  line-height: 0.78;
+  margin-bottom: 50px;
+}
+
+/* 保留 description 字符串中的换行 */
+.work-item-desc {
+  white-space: pre-line;
+}
+
+/* 作品图集：每个数组为一行，行间距 25px */
+.work-item-images {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.work-item-image-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.work-item-image-row img,
+.work-item-image-row video {
+  display: block;
+}
+
+/* 单张图片或视频：占满宽度，高度按原始比例 */
+.work-item-image-row.single>img,
+.work-item-image-row.single>video {
+  width: 100%;
+  height: auto;
+}
+
+/* 多张图片：flex-grow 由脚本设为宽高比，实现等高、按比例铺满整行且无间隙 */
+.work-item-image-row.multi>img {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  height: auto;
+}
+
+#sound {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#sound:hover {
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+  transform: rotate(-10deg);
+  text-decoration: underline;
+}
+
+.work-item-image-row video {
+  cursor: pointer;
+}

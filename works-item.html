@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xinyue Wan - Works Item</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/works-item.css">
+</head>
+
+<body class="work-item-page">
+	<div class="work-item-info">
+		<div class="work-item-top">
+			<div class="work-item-main">
+				<div class="work-item-name"></div>
+				<div class="work-item-desc-row">
+					<!-- 左侧描述 -->
+					<div class="work-item-desc work-item-desc-left"></div>
+					<!-- 右侧描述 -->
+					<div class="work-item-desc work-item-desc-right"></div>
+				</div>
+			</div>
+			<!-- 封面 -->
+			<img class="work-item-cover" alt="">
+		</div>
+		<div class="work-item-meta">
+			<div class="work-item-meta-spacer"></div>
+			<!-- type -->
+			<div class="work-item-type"></div>
+			<!-- year -->
+			<div class="work-item-year"></div>
+		</div>
+	</div>
+
+	<div class="work-item-images"></div>
+
+	<script>
+		const workItemDataList = [
+			{
+				id: "stone-museum",
+				name: "Stone Museum",
+				type: "Publication",
+				year: "2026",
+				cover: "assets/images/stone_meseum/1-2.jpg",
+				images: [
+					["assets/images/stone_meseum/1-3.jpg"],
+					["assets/images/stone_meseum/1-4.jpg", "assets/images/stone_meseum/1-5.jpg"],
+					["assets/images/stone_meseum/1-6.jpg"],
+					["assets/images/stone_meseum/1-1.jpg", "assets/images/stone_meseum/1-7.jpg"],
+					["assets/images/stone_meseum/1-8.jpg"],
+					["assets/images/stone_meseum/1-9.jpg"],
+				],
+				description: {
+					left: `Stone Museum is a collaborative
+publication developed from a visit to
+a geological museum, exploring the
+concept of accumulation through
+memory. Drawing on fragmented
+recollections of the visit, the book
+reconstructs the museum
+experience through photographs of
+everyday objects and remembered
+conversations.
+
+The publication is made of
+transparent acrylic sheets, allowing
+images and texts from different
+pages to overlap and accumulate. A
+grid system structures the
+composition, while the transparency
+creates unexpected layers of
+visibility and obstruction. This
+interplay between order and
+disorder reflects how fragments of
+memory overlap and accumulate.`,
+					right: `Double-sided inkjet printing,
+clear monofilament binding
+
+148 × 210 mm, 20 pages`
+				}
+			},
+			{
+				id: "writing-machines",
+				name: "Writing Machines",
+				type: "Publication",
+				year: "2026",
+				cover: "assets/images/Writing_Machines/2-2.jpg",
+				images: [
+					["assets/images/Writing_Machines/2-3.jpg"],
+					["assets/images/Writing_Machines/2-4.jpg", "assets/images/Writing_Machines/2-5.jpg"],
+					["assets/images/Writing_Machines/2-6.jpg"],
+					["assets/images/Writing_Machines/2-7.jpg", "assets/images/Writing_Machines/2-8.jpg"],
+					["assets/images/Writing_Machines/2-9.jpg"],
+					["assets/images/Writing_Machines/2-1.jpg", "assets/images/Writing_Machines/2-10.jpg"],
+				],
+				description: {
+					left: `Writing Machines is a publication
+based on Tom McCarthy’s essay of
+the same name, exploring the
+shifting relationship between reality,
+fiction, and reproduction. The
+design draws on the perspective of
+an open book viewed from an angle
+on a table. This visual observation is
+translated into the book’s
+parallelogram form and typographic
+layout, exploring the difference
+between an object’s physical form
+and how it is perceived.
+
+The publication combines text with
+selected photographs by Thomas
+Demand, whose work examines the
+relationship between constructed
+images and reality. The content,
+typography, and physical structure
+explore how perception shapes our
+understanding of what is real.`,
+					right: `Digital printing,
+Smyth-sewn binding
+
+148 × 210 mm, 40 pages`
+				}
+			},
+			{
+				id: "notes",
+				name: "Notes",
+				type: "Publication",
+				year: "2026",
+				cover: "assets/images/notes/3-2.jpg",
+				images: [
+					["assets/images/notes/3-3.jpg"],
+					["assets/images/notes/3-4.jpg", "assets/images/notes/3-5.jpg", "assets/images/notes/3-6.jpg"],
+					["assets/images/notes/3-1.jpg"],
+					["assets/images/notes/3-7.jpg", "assets/images/notes/3-8.jpg"],
+				],
+				description: {
+					left: `Notes is a photographic publication
+inspired by Counselling for Toads: A
+Psychological Adventure, exploring
+the character’s emotional changes
+and psychological journey through
+therapy. Through staged
+photography, everyday objects, and
+sticky notes, the book reconstructs
+key moments from the story in a
+personal, diary-like form.
+
+Sticky notes appear throughout the
+publication as fragments of
+thoughts and conversations,
+creating a sense of personal
+reflection and everyday
+record-keeping. Together, the
+photographs and written elements
+trace a gradual journey from
+depression and self-criticism
+towards self-awareness,
+expression, and recovery.`,
+					right: `Digital printing,
+Adhesive binding
+
+120 × 120 mm, 48 pages`
+				}
+			},
+			{
+				id: "fuhao",
+				name: "、《》 ·",
+				type: "Poster",
+				year: "2025",
+				cover: "assets/images/fuhao/4-1.jpg",
+				images: [
+					["assets/images/fuhao/4-2.jpg"],
+					["assets/images/fuhao/4-4.jpg", "assets/images/fuhao/4-3.jpg"],
+					["assets/images/fuhao/4-5.jpg"],
+				],
+				description: {
+					left: `、《》 · is a series of three posters
+based on my personal habit of
+switching between Chinese and
+English while typing. Focusing on
+the listing comma（、）, book title
+marks（《》）, and middle dot（·）,
+the project explores how Chinese
+punctuation marks can be used
+within English text.
+
+The posters translate this everyday
+language switching into a visual
+system. Red represents Chinese
+and black represents English, while
+mixed-language examples
+demonstrate how each punctuation
+mark functions in an English
+context. Through examples, short
+explanations, and a keyboard
+language-switch symbol, the
+posters visualise the movement
+between two linguistic systems.`,
+					right: `Inkjet printing,
+
+594 × 841 mm, set of 3`
+				}
+			},
+			{
+				id: "pane2k",
+				name: "PANE2K",
+				type: "Type Design",
+				year: "2026",
+				cover: "assets/images/PANE2K/5-2.jpg",
+				images: [
+					["assets/images/PANE2K/5-1.jpg"],
+					["assets/images/PANE2K/5-3.jpg", "assets/images/PANE2K/5-4.jpg"],
+					["assets/images/PANE2K/5-5.jpg"],
+					["assets/images/PANE2K/5-6.png"],
+					["assets/images/PANE2K/PANE2K.mp4"]
+				],
+				description: {
+					left: `PANE2K is an experimental modular
+typeface inspired by the concrete
+window screens from my childhood.
+Drawing on their geometric patterns
+and structures, the project develops
+a type system built from square
+modules within rectangular frames.
+Each letter is constructed according
+to its symmetry, using reflection and
+rotation, while the letterforms
+emerge through negative space,
+echoing the effect of light passing
+through the original screens.
+
+Frosted acrylic blocks imitate brick
+construction, allowing the
+letterforms to be assembled and
+rearranged through play. An
+animation illustrates the
+development of the typeface, from
+its architectural inspiration to the
+final design.`,
+					right: `Glyphs 3, After Effects
+Frosted Acrylic
+
+36 acrylic blocks: 12 × 12 cm,
+12 × 24 cm, 24 × 24 cm
+Animation: 52 seconds`
+				}
+			},
+			{
+				id: "written-remains",
+				name: "Written Remains",
+				type: "Mixed Media",
+				year: "2026",
+				cover: "assets/images/Written_Remains/6-2.jpg",
+				images: [
+					["assets/images/Written_Remains/6-1.jpg"],
+					["assets/images/Written_Remains/6-3.jpg", "assets/images/Written_Remains/6-4.jpg"],
+					["assets/images/Written_Remains/6-5.jpg"],
+					["assets/images/Written_Remains/6-6.jpg"],
+				],
+				description: {
+					left: `Written Remains explores the
+physical and sensory qualities of
+handwriting in an age of digital
+communication. While digital text
+can be easily copied and
+standardised, handwriting
+preserves individual traces of
+movement, time, and effort. The
+project examines these marks as
+records of human presence and the
+physical act of writing.
+
+Through laser engraving, hand
+engraving, and material
+experiments, these traces are
+translated into four acrylic panels.
+<div id="sound">Sound</div> and scent further extend the
+sensory experience of writing. The
+work functions as a time capsule,
+preserving the physical marks and
+sensations of handwriting in an
+increasingly digital world.`,
+					right: `Laser Engraving, Hand
+Engraving, Sound Recording
+
+Acrylic, Graphite Powder, Ink,
+Paper Fragments
+
+297 × 210mm, set of 4`
+				}
+			}
+		]
+		// 根据 URL 中的 id 渲染对应作品信息
+		const id = new URLSearchParams(location.search).get("id");
+		const workItem = workItemDataList.find((item) => item.id == id) || workItemDataList[0];
+
+		let winDom = document.querySelector(".work-item-name");
+		winDom.textContent = workItem.name;
+		if (id == "fuhao") {
+			winDom.style.lineHeight = "1";
+			winDom.style.fontFamily = "PingFang SC";
+		}
+
+		let wicDom = document.querySelector(".work-item-cover");
+		wicDom.src = workItem.cover;
+		wicDom.alt = workItem.name;
+
+		document.querySelector(".work-item-type").textContent = workItem.type;
+		document.querySelector(".work-item-year").textContent = workItem.year;
+		document.querySelector(".work-item-desc-left").innerHTML = workItem.description.left;
+		document.querySelector(".work-item-desc-right").innerHTML = workItem.description.right;
+		document.title = `Xinyue Wan - ${workItem.name}`;
+
+		// 按 images 数组逐行渲染图片/视频
+		const imagesDom = document.querySelector(".work-item-images");
+		workItem.images.forEach((row) => {
+			const rowDom = document.createElement("div");
+			rowDom.className = "work-item-image-row";
+			const isSingle = row.length === 1;
+			rowDom.classList.add(isSingle ? "single" : "multi");
+
+			row.forEach((src) => {
+				const isVideo = /\.(mp4|mov|webm)$/i.test(src);
+				const mediaDom = document.createElement(isVideo ? "video" : "img");
+
+				if (isVideo) {
+					mediaDom.src = src;
+					mediaDom.autoplay = true;
+					mediaDom.loop = true;
+					mediaDom.muted = true;
+					mediaDom.playsInline = true;
+					// 点击切换暂停/播放
+					mediaDom.addEventListener("click", () => {
+						if (mediaDom.paused) {
+							mediaDom.play();
+						} else {
+							mediaDom.pause();
+						}
+					});
+				} else {
+					mediaDom.alt = workItem.name;
+					if (!isSingle) {
+						// 等高排列：按宽高比分配宽度
+						mediaDom.addEventListener("load", () => {
+							mediaDom.style.flexGrow = mediaDom.naturalWidth / mediaDom.naturalHeight;
+						});
+					}
+					mediaDom.src = src;
+				}
+
+				rowDom.appendChild(mediaDom);
+			});
+
+			imagesDom.appendChild(rowDom);
+		});
+
+		// 点击 #sound 播放/暂停音频
+		const soundDom = document.querySelector("#sound");
+		if (soundDom) {
+			const soundAudio = new Audio("assets/images/Written_Remains/sound.m4a");
+			soundDom.addEventListener("click", () => {
+				if (soundAudio.paused) {
+					soundAudio.play();
+				} else {
+					soundAudio.pause();
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>
